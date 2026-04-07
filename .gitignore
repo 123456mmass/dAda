@@ -24,3 +24,6 @@ firmware/esp32_trip_status/build_cdc/
 frontend/AGENTS.md
 frontend/CLAUDE.md
 scripts/
+
+backend/tmp_lab_data/
+*.docx
