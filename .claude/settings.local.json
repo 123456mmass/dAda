@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:rtr.at)",
+      "Bash(python em96_reader.py)",
+      "Bash(pip install:*)",
+      "Bash(python scan_em96_registers.py)",
+      "Bash(python test_em96_simple.py)",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+ 
+ 
+ Input Registers，Function code 04 
+  Address (Register)  
+ Input Register Parameter       
+  Modbus  Protocol Start   Address Hex       Description Length (bytes) Data Format Units Hi Byte Lo Byte 30001 Phase 1 line to neutral volts. 4 Float V 00 00 30003 Phase 2 line to neutral volts. 4 Float V 00 02 30005 Phase 3 line to neutral volts. 4 Float V 00 04 30007 Phase 1 current. 4 Float A 00 06 30009 Phase 2 current. 4 Float A 00 08 30011 Phase 3 current. 4 Float A 00 0A 30013 Phase 1 active power. 4 Float W 00 0C 30015 Phase 2 active power. 4 Float W 00 0E 30017 Phase 3 active power. 4 Float W 00 10 30019 Phase 1 apparent power. 4 Float VA 00 12 30021 Phase 2 apparent power. 4 Float VA 00 14 30023 Phase 3 apparent power. 4 Float VA 00 16 30025 Phase 1 reactive power. 4 Float VAr 00 18 30027 Phase 2 reactive power. 4 Float VAr 00 1A 30029 Phase 3 reactive power. 4 Float VAr 00 1C 30031 Phase 1 power factor (1). 4 Float None 00 1E 30033 Phase 2 power factor (1). 4 Float None 00 20 30035 Phase 3 power factor (1). 4 Float None 00 22 30037 Phase 1 phase angle. 4 Float Degrees 00 24 30039 Phase 2 phase angle. 4 Float Degrees 00 26 30041 Phase 3 phase angle. 4 Float Degrees 00 28 30043 Average line to neutral volts. 4 Float V 00 2A 30047 Average line current. 4 Float A 00 2E 30049 Sum of line currents. 4 Float A 00 30 30053 Total system power. 4 Float W 00 34 30057 Total system volt amps. 4 Float VA 00 38 30061 Total system VAr. 4 Float VAr 00 3C 30063 Total system power factor (1). 4 Float None 00 3E 30067 Total system phase angle. 4 Float Degrees 00 42 30071 Frequency of supply voltages. 4 Float Hz 00 46 30073 Total import active energy . 4 Float kWh 00 48 30075 Total export active energy . 4 Float kWH 00 4A 30077 Total import reactive energy . 4 Float kVArh 00 4C 30079 Total export reactive energy . 4 Float kVArh 00 4E 
+ 
+ 
+30081 Total apparent energy. 4 Float kVAh 00 50 30083 Ah. 4 Float Ah 00 52 30085 Total system power demand (2) . 4 Float W 00 54 30087 Maximum total system power demand (2). 4 Float W 00 56 30089 Import active power demand 4 Float W 00 58 30091 Import active power max. demand 4 Float W 00 5A 30093 Export active power demand 4 Float W 00 5C 30095 Export active power max. demand 4 Float W 00 5E 30101 Total system VA demand. 4 Float VA 00 64 30103 Maximum total system VA demand. 4 Float VA 00 66 30105 Neutral current demand. 4 Float Amps 00 68 30107 Maximum neutral current demand. 4 Float Amps 00 6A 30109 Total system reactive power demand. (2) 4 Float VAr 00 6C 30111 Maximum total system reactive power demand(2) 4 Float VAr 00 6E 30113 Phase 1 Displacement Power Factor  4 Float None 00 70 30115 Phase 2 Displacement Power Factor 4 Float None 00 72 30117 Phase 3 Displacement Power Factor 4 Float None 00 74 30119 Total  Displacement Power Factor 4 Float None 00 76 30161 Vo l t a g e  p h a s e  s e q u e n c e （normal=1、reverse=2、phase missing =3） 4 Float None 00 A0 
+30163 Current phase sequence （normal=1、reverse=2、phase missing =3） 4 Float None 00 A2 30165 L1 Voltage Crest Factor  4 Float None 00 A4 30167 L2 Voltage Crest Factor  4 Float None 00 A6 30169 L3 Voltage Crest Factor  4 Float None 00 A8 30183 L1 Current K Factor  4 Float None 00 B6 30185 L2 Current K Factor  4 Float None 00 B8 30187 L3 Current K Factor  4 Float None 00 BA 30193 Nature of the load（Resistive =1、inductive =2、capacitive =3） 4 Float None 00 C0 
+30195 Nature of L1 load（Resistive=1、inductive=2、capacitive =3） 4 Float None 00 C2 
+30197 Nature of L2 load（Resistive =1、inductive=2、capacitive =3） 4 Float None 00 C4 
+30199 Nature of L3 load（Resistive =1、inductive=2、capacitive =3） 4 Float None 00 C6 30201 Line 1 to Line 2 volts. 4 Float V 00 C8 30203 Line 2 to Line 3 volts. 4 Float V 00 CA 30205 Line 3 to Line 1 volts. 4 Float V 00 CC 30207 Average line to line volts. 4 Float V 00 CE 30225 Neutral current. 4 Float A 00 E0 30235 Phase 1 L/N volts THD 4 Float % 00 EA 30237 Phase 2 L/N volts THD 4 Float % 00 EC 
+ 
+ 
+30239 Phase 3 L/N volts THD 4 Float % 00 EE 30241 Phase 1 Current THD 4 Float % 00 F0 30243 Phase 2 Current THD 4 Float % 00 F2 30245 Phase 3 Current THD 4 Float % 00 F4 30249 Average line to neutral volts THD. 4 Float % 00 F8 30251 Average line current THD. 4 Float % 00 FA 30259 Phase 1 current demand. 4 Float A 01 02 30261 Phase 2 current demand. 4 Float A 01 04 30263 Phase 3 current demand. 4 Float A 01 06 30265 Maximum phase 1 current demand. 4 Float A 01 08 30267 Maximum phase 2 current demand. 4 Float A 01 0A 30269 Maximum phase 3 current demand. 4 Float A 01 0C 30335 Line 1 to line 2 volts THD. 4 Float ％ 01 4E 30337 Line 2 to line 3 volts THD. 4 Float ％ 01 50 30339 Line 3 to line 1 volts THD. 4 Float ％ 01 52 30341 Average line to line volts THD. 4 Float ％ 01 54 30343 Total active Energy (3) 4 Float kWh 01 56 30345 Total reactive Energy (3) 4 Float kV Arh 01 58 30347 L1 import active Energy 4 Float kWh 01 5A 30349 L2 import active Energy 4 Float kWh 01 5C 30351 L3 import active Energy 4 Float kWh 01 5E 30353 L1 export active Energy 4 Float kWh 01 60 30355 L2 export active Energy 4 Float kWh 01 62 30357 L3 export active Energy 4 Float kWh 01 64 30359 L1 total active Energy 4 Float kWh 01 66 30361 L2 total active Energy 4 Float kWh 01 68 30363 L3 total active Energy 4 Float kWh 01 6A 30365 L1 import reactive energy 4 Float kV Arh 01 6C 30367 L2 import reactive energy 4 Float kV Arh 01 6E 30369 L3 import reactive energy 4 Float kV Arh 01 70 30371 L1 export reactive energy 4 Float kV Arh 01 72 30373 L2 export reactive energy 4 Float kV Arh 01 74 30375 L3 export reactive energy 4 Float kV Arh 01 76 30377 L1 total reactive energy 4 Float kV Arh 01 78 30379 L2 total reactive energy 4 Float kV Arh 01 7A 30381 L3 total reactive energy 4 Float kV Arh 01 7C 30403 Voltage 2nd~63st Harmonic L1 248 Float % 01 92 30527 Voltage 2nd~63st Harmonic L2 248 Float % 02 0E 30651 Voltage 2nd~63st Harmonic L3 248 Float % 02 8A 30775 Current 2nd~63st Harmonic L1 248 Float % 03 06 30899 Current 2nd~63st Harmonic L2 248 Float % 03 82 31023 Current 2nd~63st Harmonic L3 248 Float % 03 FE 31147 Voltage Total Harmonic L1 4 Float % 04 7A 
+ 
+ 
+31149 Voltage Total Harmonic L2 4 Float % 04 7C 31151 Voltage Total Harmonic L3 4 Float % 04 7E 31153 Current Total Harmonic L1 4 Float % 04 80 31155 Current Total Harmonic L2 4 Float % 04 82 31157 Current Total Harmonic L3 4 Float % 04 84 32649 Maximum value of total active power 4 Float W 0A 58 32651 Maximum value of total reactive power 4 Float VA r 0A 5A 32653 Maximum value of total apparent power 4 Float VA 0A 5C 32655 Maximum value of phase 1 active power 4 Float W 0A 5E 32657 Maximum value of phase 2 active power 4 Float W 0A 60 32659 Maximum value of phase 3 active power 4 Float W 0A 62 32661 Maximum value of phase 1 reactive power 4 Float VA r 0A 64 32663 Maximum value of phase 2 reactive power 4 Float VA r 0A 66 32665 Maximum value of phase 3 reactive power 4 Float VA r 0A 68 32667 Maximum value of phase 1 apparent power 4 Float VA 0A 6A 32669 Maximum value of phase 2 apparent power 4 Float VA 0A 6C 32671 Maximum value of phase 3 apparent power 4 Float VA 0A 6E 32673 Maximum value of phase 1 current 4 Float A 0A 70 32675 Maximum value of phase 2 current 4 Float A 0A 72 32677 Maximum value of phase 3 current 4 Float A 0A 74 32679 Maximum value of neutral current 4 Float A 0A 76 32681 Maximum value of total currents 4 Float A 0A 78 32683 Maximum value of phase 1 line to neutral voltage 4 Float V 0A 7A 32685 Maximum value of phase 2 line to neutral voltage  4 Float V 0A 7C 32687 Maximum value of phase 3 line to neutral voltage 4 Float V 0A 7E 32689 Maximum value of line 1 to line 2 voltage  4 Float V 0A 80 32691 Maximum value of line 2 to line3 voltage 4 Float V 0A 82 32693 Maximum value of line 3 to line 1 voltage 4 Float V 0A 84 32695 Minimum value of total active power 4 Float W 0A 86 32697 Minimum value of total reactive power 4 Float VA r 0A 88 32699 Minimum value of total apparent power 4 Float VA 0A 8A 32701 Minimum value of phase 1 active power 4 Float W 0A 8C 32703 Minimum value of phase 2 active power 4 Float W 0A 8E 32705 Minimum value of phase 3 active power 4 Float W 0A 90 32707 Minimum value of phase 1 reactive power 4 Float VA r 0A 92 32709 Minimum value of phase 2 reactive power 4 Float VA r 0A 94 32711 Minimum value of phase 3 reactive power 4 Float VA r 0A 96 32713 Minimum value of phase 1 apparent power 4 Float VA 0A 98 32715 Minimum value of phase 2 apparent power 4 Float VA 0A 9A 32717 Minimum value of phase 3 apparent power 4 Float VA 0A 9C 32719 Minimum value of phase 1 current  4 Float A 0A 9E 32721 Minimum value of phase 2 current  4 Float A 0A A0 32723 Minimum value of phase 3 current  4 Float A 0A A2 
+ 
+ 
+32725 Minimum value of neutral current  4 Float A 0A A4 32727 Minimum value of total currents 4 Float A 0A A6 32729 Minimum value of phase 1 line to neutral voltage  4 Float V 0A A8 32731 Minimum value of phase 2 line to neutral voltage  4 Float V 0A AA 32733 Minimum value of phase 3 line to neutral voltage  4 Float V 0A AC 32735 Minimum value of line 1 to line 2 voltage  4 Float V 0A AE 32737 Minimum value of line 2 to line3 voltage  4 Float V 0A B0 32739 Minimum value of line 3 to line 1 voltage  4 Float V 0A B2 32763 Maximum value of  total power factor 4 Float None 0A CA 32765 Maximum value of  L1 power factor 4 Float None 0A CC 32767 Maximum value of  L2 power factor 4 Float None 0A CE 32769 Maximum value of  L3 power factor 4 Float None 0A D0 32771 Maximum value of  L1 voltage THD 4 Float % 0A D2 32773 Maximum value of  L2 voltage THD 4 Float % 0A D4 32775 Maximum value of  L3 voltage THD 4 Float % 0A D6 32777 Maximum value of  L1 current THD 4 Float % 0A D8 32779 Maximum value of  L2 current THD 4 Float % 0A DA 32781 Maximum value of  L3 current THD 4 Float % 0A DC 32783 Minimum value of  total power factor 4 Float None 0A DE 32785 Minimum value of  L1 power factor 4 Float None 0A E0 32787 Minimum value of  L2 power factor 4 Float None 0A E2 32789 Minimum value of  L3 power factor 4 Float None 0A E4 32791 Minimum value of  L1 voltage THD 4 Float % 0A E6 32793 Minimum value of  L2 voltage THD 4 Float % 0A E8 32795 Minimum value of  L3 voltage THD 4 Float % 0A EA 32797 Minimum value of  L1 current THD 4 Float % 0A EC 32799 Minimum value of  L2 current THD 4 Float % 0A EE 32801 Minimum value of  L3 current THD 4 Float % 0A F0 34877 Total active energy Rate 1 4 Float kWh 13 0C 34879 Total active energy Rate 2 4 Float kWh 13 0E 34881 Total active energy Rate 3 4 Float kWh 13 10 34883 Total active energy Rate 4 4 Float kWh 13 12 34885 Import active energy Rate 1 4 Float kWh 13 14 34887 Import active energy Rate 2 4 Float kWh 13 16 34889 Import active energy Rate 3 4 Float kWh 13 18 34891 Import active energy Rate 4 4 Float kWh 13 1A 34893 Export active energy Rate 1 4 Float kWh 13 1C 34895 Export active energy Rate 2 4 Float kWh 13 1E 34897 Export active energy Rate 3 4 Float kWh 13 20 34899 Export active energy Rate 4 4 Float kWh 13 22 34901 Total reactive energy Rate 1 4 Float kVArh 13 24 34903 Total reactive energy Rate 2 4 Float kVArh 13 26 34905 Total reactive energy Rate 3 4 Float kVArh 13 28 
+ 
+ 
+34907 Total reactive energy Rate 4 4 Float kVArh 13 2A 34909 Import reactive energy Rate 1 4 Float kVArh 13 2C 34911 Import reactive energy Rate 2 4 Float kVArh 13 2E 34913 Import reactive energy Rate 3 4 Float kVArh 13 30 34915 Import reactive energy Rate 4 4 Float kVArh 13 32 34917 Export reactive energy Rate 1 4 Float kVArh 13 34 34919 Export reactive energy Rate 2 4 Float kVArh 13 36 34921 Export reactive energy Rate 3 4 Float kVArh 13 38 34923 Export reactive energy Rate 4 4 Float kVArh 13 3A  Notes: 1. The power factor has its sign adjusted to indicate the direction of the current. Positive refers to forward current, negative refers to reverse current. 2. The power sum demand calculation is for import – export. 3. Total active energy / reactive energy equals to Import + export.    Holding Register，Function code 03 / 10   Address Register 
+  Parameter 
+  Modbus   Protocol  Start Address Hex 
+            Valid range 
+   Mode High Byte Low Byte 
+40001 Demand Time 00 00 
+Read minutes into first demand calculation. When the Demand Time reaches the Demand Period then the demand values are valid. Length : 4 byte Data Format : Float 
+ro 
+40003 Demand Period 00 02 Write demand period: 0~60 minutes, Default 60. Range: 0~60, 0 means function closed Length : 4 byte Data Format : Float r/w 
+40005 Slide time 00 04 Default 1, min. Range ：1 ~ (Demand Period -1). Length : 4 byte Data Format : Float r/w 
+40007 Demand calculation method 00 06 
+Default 0， 0 = sliding block 1 = fixed block  Length : 4 byte Data Format : Float 
+r/w 
+40011 System Type 00 0A Write system type:  r/w 
+ 
+ 
+1 = 1P2W; 2 = 3P3W; 3 = 3P4W,(default); 4 = 1P3W; 5 = 3P3W Balance load; 6 = 3P4W Balance load; Length : 4 byte Data Format : Float (KPPA is asked) 
+40015 Key Parameter Programming Authorization (KPPA) 00 0E 
+Read: to get the status of the KPPA 0 = not authorized；1 = authorized Write the correct password to get KPPA, enable to program key parameters. Length : 4 byte Data Format : Float 
+r/w 
+40019 Parity and stop bit 00 12 
+Write the network port parity/stop bits for MODBUS Protocol, where: 0 = One stop bit and no parity, default. 1 = One stop bit and even parity. 2 = One stop bit and odd parity.3 = Two stop bits and no parity. Length : 4 byte Data Format : Float 
+r/w 
+40021 Modbus address 00 14 Write the network port node Address: 1 to 247 for MODBUS Protocol, default 1. Length : 4 byte Data Format : Float r/w 
+40025 Password 00 18 
+Read: to get the password of the meter Write:  to program the new password of the meter Default 1000 Length : 4 byte Data Format : Float 
+r/w 
+40029 Network Baud Rate 00 1C 
+Write the network port baud rate for MODBUS Protocol, where: 0 = 2400 baud. 1 = 4800 baud. 2 = 9600 baud, default. 3 = 19200 baud. 4 = 38400 baud Length : 4 byte Data Format : Float 
+r/w 
+40047 PT1 00 2E PT1 Range 100- 500000V , Default 230 Length : 4 byte Data Format : Float (KPPA is asked) r/w 
+40049 PT2 00 30 PT2 Range 100- 480V , Default 230 Length : 4 byte Data Format : Float (KPPA is asked) r/w 
+ 
+ 
+40051 CT1 00 32 CT1 Range 1-9999A，Default 5， Length : 4 byte Data Format : Float (KPPA is asked) r/w 
+40053 CT2 00 34 CT2 Range: 1A or 5A , Default 5A  Length : 4 byte Data Format : Float (KPPA is asked) r/w 
+40057 
+Current Direction correction （when the external CT is connected reversely） 
+00 38 
+0 = L1 Frd，L2 Frd，L3 Frd 1 = L1 Rev，L2 Frd，L3 Frd 2 = L1 Frd，L2 Rev，L3 Frd 3 = L1 Rev，L2 Rev，L3 Frd 4 = L1 Frd，L2 Frd，L3 Rev 5 = L1 Rev，L2 Frd，L3 Rev 6 = L1 Frd，L2 Rev，L3 Rev 7 = L1 Rev，L2 Rev，L3 Rev Default 0 Length : 4 byte Data Format :Float (KPPA is asked) 
+r/w 
+40059 Automatic Scroll Display Time 00 3A Default 5，second Range 1~255  Length : 4 byte Data Format : Float r/w 
+40061 Backlit time 00 3C 
+Default 60, min Range 0~121，0 means backlit always on ，121 means backlit always off Length : 4byte Data Format : Float 
+r/w 
+40513 DO-1 mode 02 00 DO-1 output mode  00 00 = level; 00 01 = pulse Length : 2byte Data Format : Hex r/w 
+40514 DO-2 mode 02 01 DO-2 output mode  00 00 = level; 00 01 = pulse Length : 2byte Data Format : Hex r/w 
+40521 DO-1 pulse duration 02 08 DO-1 pulse duration (1000ms: 50 ~ 3000)  Length : 2 byte Data Format : unsigned int16 r/w 
+40522 DO-2 pulse duration 02 09 DO-2 pulse duration (1000ms: 50 ~ 3000)  Length : 2 byte Data Format : unsigned int16 r/w 
+40769 DI filter time  03 00 DI filter time (0ms: 0~255) , r/w 
+ 
+ 
+Default 100ms Length : 2 byte Data Format : unsigned int16 
+40770 DI-1 count 03 01 DI-1 count Length : 4 byte Data Format : unsigned int32 Write 0 to reset the count. No response if write other value. r/w 
+40772 DI-2 count 03 03 DI-2 count Length : 4 byte Data Format : unsigned int32 Write 0 to reset the count. No response if write other value r/w 
+40774 DI-3 count 03 05 DI-3 count Length : 4 byte Data Format : unsigned int32 Write 0 to reset the count. No response if write other value r/w 
+40776 DI-4 count 03 07 DI-4 count Length : 4 byte Data Format : unsigned int32 Write 0 to reset the count. No response if write other value r/w 
+41025 DO-1 Alarm Parameter (1) 04 00 
+DO-1 Alarm parameter Range: 0~29，and 255； Default: 255 = null  Length : 2 byte Data Format : unsigned int16 
+r/w 
+41026 DO-1 Action delay time 04 01 DO-1 Action delay time，unit: ms Range:0~9999；default: 200ms Length : 2 byte Data Format : unsigned int16 r/w 
+41027 DO-1 HC Value (2) 04 02 DO-1 High value to close Length : 4 byte Data Format : Float r/w 
+41029 DO-1 HO value (2) 04 04 DO-1 High value to open Length : 4 byte Data Format : Float r/w 
+41031 DO-1 LO value (2) 04 06 DO-1 Low value to open Length : 4 byte Data Format : Float r/w 
+41033 DO-1 LC value (2) 04 08 DO-1 Low value to close Length : 4 byte Data Format : Float r/w 
+41035 DO-2 Alarm Parameter (1) 04 0A DO-2 Alarm parameter Range: 0~29，and 255； Default: 255 = null  Length : 2 byte r/w 
+ 
+ 
+Data Format : unsigned int16 
+41036 DO-2 Action delay time 04 0B DO-2 Action delay time，unit: ms Range:0~9999；default: 200ms Length : 2 byte Data Format : unsigned int16 r/w 
+41037 DO-2 HC Value (2) 04 0C DO-2 High value to close Length : 4 byte Data Format : Float r/w 
+41039 DO-2 HO value (2) 04 0E DO-2 High value to open Length : 4 byte Data Format : Float r/w 
+41041 DO-2 LO value (2) 04 10 DO-2 Low value to open Length : 4 byte Data Format : Float r/w 
+41043 DO-2 LC value (2) 04 12 DO-2 Low value to close Length : 4 byte Data Format : Float r/w 
+41105 DO-1 Status 04 50 
+DO-1 Status 0 = Open (HO or LO) 1 = HC  2 = LC  Length : 2 byte Data Format : unsigned int16 
+ro 
+41106 DO-2 Status 04 51 
+DO-2 Status 0 = Open  1 = HC  2 = LC Length : 2 byte Data Format : unsigned int16 
+ro 
+41281 SOE-01 (3) 05 00 SOE-01 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41285 SOE-02 (3) 05 04 SOE-02 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41289 SOE-03 (3) 05 08 SOE-03 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41293 SOE-04 (3) 05 0C SOE-04 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte ro 
+ 
+ 
+Data Format : BCD 
+41297 SOE-05 (3) 05 10 SOE-05 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41301 SOE-06(3) 05 14 SOE-06 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41305 SOE-07 (3) 05 18 SOE-07 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41309 SOE-08 (3) 05 1C SOE-08 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41313 SOE-09 (3) 05 20 SOE-09 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41317 SOE-10 (3) 05 24 SOE-10 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41321 SOE-11 (3) 05 28 SOE-11 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41325 SOE-12 (3) 05 2C SOE-12 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41329 SOE-13 (3) 05 30 SOE-13 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41333 SOE-14 (3) 05 34 SOE-14 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41337 SOE-15 (3) 05 38 SOE-15 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte ro 
+ 
+ 
+Data Format : BCD 
+41341 SOE-16 (3) 05 3C SOE-16 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41345 SOE-17 (3) 05 40 SOE-17 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41349 SOE-18 (3) 05 44 SOE-18 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41353 SOE-19 (3) 05 48 SOE-19 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41357 SOE-20 (3) 05 4C SOE-20 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41361 SOE-21 (3) 05 50 SOE-21 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41365 SOE-22 (3) 05 54 SOE-22 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41369 SOE-23 (3) 05 58 SOE-23 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41373 SOE-24 (3) 05 5C SOE-24 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41377 SOE-25 (3) 05 60 SOE-25 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41381 SOE-26 (3) 05 64 SOE-26 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte ro 
+ 
+ 
+Data Format : BCD 
+41385 SOE-27 (3) 05 68 SOE-27 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41389 SOE-28 (3) 05 6C SOE-28 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41393 SOE-29 (3) 05 70 SOE-29 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+41397 SOE-30 (3) 05 74 SOE-30 information; the format is: type- event cause -year-month-date -hour-min-second Length : 8 byte Data Format : BCD ro 
+461441 Time F0 00 s-min-hour-week-Date-Month-Year-20 Length : 8 byte Data Format : BCD r/w 
+461445 Running time F0 04 
+Day-hour-minute, day = 2byte;hour = 1byte; minute=1byte Length : 4 byte Data Format : BCD For example: 04 23 21 57 refer to  Running time=423 day + 21 hour + 57 min Write 00 00 00 00 to reset the running hour 
+r/w 
+461457 Reset historical data F0 10 
+00 00 = reset demand info 00 03 = reset energy info 00 04 = reset max. and min. data 00 05 = reset SOE info 00 06 = reset DI counts Length : 2 byte Data Format: Hex 
+wo 
+461697 Meter Info F1 00 Meter information：model and software version Length : 16 byte Data Format : AscII（Character ASCII） ro 
+463233 Tariff  F7 00 
+Tariff number-Min-Hour Tariff number：01，02，03，04 Min：00-59 Hour：00-23 Length : 30 byte Data Format : BCD 
+r/w 
+ 
+ 
+    
+463793 Running time F9 30 Continuous working period--hour  Length : 4 byte Data Format : Float r/w 
+ 
+ 
+ Note: (1) Table-1  Alarm Parameter  Number Alarm parameter Number Alarm parameter Number Alarm parameter 0 Phase 1 line to neutral volts. 10 Phase 3 current. 20 Total system VAr. 1 Phase 2 line to neutral volts. 11 Average line current. 21 Phase 1 apparent power. 2 Phase 3 line to neutral volts. 12 Neutral current. 22 Phase 2 apparent power. 3 Average line to neutral volts. 13 Phase 1 active power. 23 Phase 3 apparent power. 4 Line 1 to Line 2 volts. 14 Phase 2 active power. 24 Total system volt amps. 5 Line 2 to Line 3 volts. 15 Phase 3 active power. 25 Phase 1 power factor. 6 Line 3 to Line 1 volts. 16 Total system power. 26 Phase 2 power factor. 7 Average line to line volts. 17 Phase 1 reactive power. 27 Phase 3 power factor . 8 Phase 1 current. 18 Phase 2 reactive power. 28 Total system power factor. 9 Phase 2 current. 19 Phase 3 reactive power. 29 Frequency of supply voltages.  (2) Please make sure during the setting: HC>HO >LO >LC  (3) SOE information format：type-status-year-month-date-hour-min-second； Type: 0~67 and 99 (4 table-2) Event cause: 0 = null; 1 and 2 refer to the cause of event. 1 = HC alarm caused event; 2 = LC alarm caused event Year: the year when event happened. For example2017，year=17； Month: the month when event happened.  Date: the date when event happened;  Hour: the hour when event happened; Min: the Minute when event happened Second: the second when event happened  (4) Table-2  Event descriptions Number Event description Number Event description Number Event description 0 L1 Voltage alarm 14 L2 active power alarm 28 Total PF alarm 1 L2 Voltage alarm 15 L3 active power alarm 29 Frequency alarm 2 L3 Voltage alarm 16 Total active power alarm 60 Power on 3 L-N Average voltage alarm 17 L1 reactive power alarm 61 Power off 4 L1-2 Voltage alarm 18 L2reactive power alarm 62 CT2 change 5 L2-3 Voltage alarm 19 L3reactive power alarm 63 CT1change 6 L3-1 Voltage alarm 20 Total reactive power alarm 64 PT2change 7 L-L Average voltage alarm 21 L1apparent power alarm 65 PT1change 8 L1 Current alarm 22 L2 apparent power alarm 66 Energy reset 9 L2Current alarm 23 L3 apparent power alarm 67 Demand info reset 10 L3Current alarm 24 Total apparent power alarm 99 Null 11  Average current alarm 25 L1PF alarm   12 Neutral current alarm 26 L2 PF alarm   13 L1 active power alarm 27 L3 PF alarm    
+ 
+ 
+Read Input Status, function code 02 
+  Read Coil Status, function code 01 
+  Force Single Coil, function code 05 
+ Address Register  Parameter Number Parameter Modbus Protocol Start Address Hex          Valid range   Mode 
+High Byte Low Byte 
+10001 1 DI-1 status 00 00 DI1 status, 1=ON, 0=OFF  Length : 1 bit Data Format :Binary  ro 
+10002 2 DI-2 status 00 01 DI2 status, 1=ON, 0=OFF  Length : 1 bit Data Format :Binary ro 
+10003 3 DI-3 status 00 02 DI3 status, 1=ON, 0=OFF  Length : 1 bit Data Format :Binary ro 
+10004 4 DI-4 status 00 03 DI4 status, 1=ON, 0=OFF  Length : 1 bit Data Format :Binary ro 
+ Address Register  Parameter Number Parameter Modbus Protocol Start Address Hex          Valid range   Mode 
+High Byte Low Byte 
+00001 1 DO-1 status 00 00 DO-1 status,1=ON, 0=OFF Length : 1 bit Data Format : Binary ro 
+00002 2 DO-2 status 00 01 DO-2 status,1=ON, 0=OFF Length : 1 bit Data Format : Binary ro 
+ Parameter Number Parameter Modbus  Protocol Start Address Hex          Valid range   Mode 
+High Byte Low Byte 
+1 Control DO-1 00 00 0xFF00=ON, 0x0000=OFF Length :2 byte Data Format :Hex   w 
+2 Control DO-2 00 01 0xFF00=ON, 0x0000=OFF w 
+ 
+ 
+    Example: 1, Read Input Registers Example: Read “Phase 1 line to neutral volts” Request:  01 04 00 00 00 02 71 CB Where,  01 = Meter address 04 = Function code 00 = High byte of registers starting address 00 = Low byte of registers starting address 00 = High byte of registers number 02 = Low byte of registers number 71 = CRC Low CB = CRC High Response:  01 04 04 43 66 33 34 1B 38 Where,  01 = Meter address 04 = Function code 04= Byte count 43 = Data, (High Word, High Byte) 66 = Data, (High Word, Low Byte) 33 = Data, (Low Word, High Byte) 34 = Data, (Low Word, Low Byte) 1B = CRC Low 38 = CRC High Note: 43 66 33 34(Hex) = 230.2 (Floating point) 2, Read Holding Registers Example: Read “Slide time” Request:  01 03 00 04 00 02 85 CA Where,  01 = Meter address 03 = Function code 00 = High byte of registers starting address 04 = Low byte of registers starting address 00 = High byte of registers number 02 = Low byte of registers number 85 = CRC Low CA = CRC High Response:  01 03 04 40 A0 00 00 EF D1 Where,  01 = Meter address 03 = Function code 04= Byte Count 40 = Data, (High Word, High Byte) A0 = Data, (High Word, Low Byte) 
+Length :2 byte Data Format :Hex 
+ 
+ 
+00 = Data, (Low Word, High Byte) 00 = Data, (Low Word, Low Byte) EF = CRC Low D1 = CRC High Note: 40 A0 00 00 (Hex) = 5 (Floating point)  3, Write Holding Registers Example: Write “System Type” = 4 Request:  01 10 00 0A 00 02 04 40 80 00 00 67 F8 Where,  01 = Meter address 10 = Function code 00 = High byte of registers starting address 0A = Low byte of registers starting address 00 = High byte of registers number 02 = Low byte of registers number 04 = Byte Count 40 = Data, (High Word, High Byte) 80 = Data, (High Word, Low Byte) 00 = Data, (Low Word, High Byte) 00 = Data, (Low Word, Low Byte) 67 = CRC Low F8 = CRC High Note: 40 80 00 00 (Hex) = 4 (Floating point) Response:  01 10 00 0A 00 02 61 CA Where,  01 = Meter address 10 = Function code 00 = High byte of registers starting address 0A = Low byte of registers starting address 00 = High byte of registers number 02 = Low byte of registers number 61 = CRC Low CA = CRC High  4, Read Input Status Example: Read DI1~4 status Request:  01 02 00 00 00 04 79 C9 Where,  01 = Meter address 02 = Function code 00 = High byte of registers starting address 00 = Low byte of registers starting address 00 = High byte of read DI number 04 = Low byte of read DI number 79 = CRC Low C9 = CRC High 
+ 
+ 
+Response:  01 02 01 03 E1 89 Where,  01 = Meter address 02 = Function code 01 = Byte Count 03 =Data,( DI status) E1 = CRC Low 89 = CRC High Note: Data=0x03 = 0000 0011 (Binary Value).  Bit 0 refers to the status of DI-1. The value is 1, which means DI-1 is on.  Bit 1 refers to the status of DI-2. The value is 1, which means DI-2 is on  Bit 2 refers to the status of DI-3. The value is 0, which means DI-3 is off  Bit 3 refers to the status of DI-4. The value is 0, which means DI-4 is off  5, Read Coil Status Example: Read DO1~2 status Request:  01 01 00 00 00 02 BD CB Where,  01 = Meter address 01 = Function code 00 = High byte of registers starting address 00 = Low byte of registers starting address 00 = High byte of read DO number 02 = Low byte of read DO number BD = CRC Low CB = CRC High Response:  01 01 01 02 D0 49 Where,  01 = Meter address 01 = Function code 01 = Byte Count 02 =Data,( DO status) D0 = CRC Low 49 = CRC High Note: Data=0x02 = 0000 0010 (Binary Value).  Bit 0 refers to DO-1 status. The value is 0, which means DO-1 is open  Bit 1 refers to DO-2 status. The value is 1, which means DO-1 is close  6, Force Single Coil Example: Control DO1=ON Request:  01 05 00 00 FF 00 8C 3A Where,  01 = Meter address 05 = Function code 00 = High byte of registers starting address 00 = Low byte of registers starting address FF = High byte of DO control data 00 = Low byte of DO control data 
+ 
+ 
+8C = CRC Low 3A = CRC High Response:  01 05 00 00 FF 00 8C 3A Where,  01 = Meter address 05 = Function code 00 = High byte of registers starting address 00 = Low byte of registers starting address FF = High byte of DO control data 00 = Low byte of DO control data 8C = CRC Low 3A = CRC High  
