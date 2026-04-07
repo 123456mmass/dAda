@@ -27,3 +27,4 @@ scripts/
 
 backend/tmp_lab_data/
 *.docx
+.claude/
